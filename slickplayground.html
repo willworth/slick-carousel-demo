@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    <script>
+    
+    $(document).ready(() => {
+            $('#slideshow .slick').slick({
+                autoplay: false,
+                speed: 1500,
+                fade: true,
+                prevArrow: $('.left-arrow'),
+                nextArrow: $('.right-arrow')
+
+            });
+ 
+    });
+    
+    
+    
+    
+    
+    </script>
+
+    <style>
+      body {
+        background-color: slategrey;
+        color: wheat;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      #slideshow   {
+        width: 600px;
+        margin: 0 auto;
+    
+      }
+
+
+      #slideshow  div {
+        width: 100%;
+        height: 900px
+    
+      }
+
+      #slideshow  img {
+        width: 100%;
+        height: auto;
+    
+      }
+
+
+      .arrow {
+          
+          width:20px;
+          height: 20px;
+          background-color: black;
+          color:blanchedalmond;
+      }
+
+
+
+.slideshow-nav-wrapper {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content:  space-between;
+
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1>slick playground</h1>
+    <h2>instructions/notes</h2>
+    <p>
+      you have to put the js after jquery.
+      <a href="Ken's notes"
+        >https://kenwheeler.github.io/slick/#getting-started</a
+      >.
+    </p>
+
+
+
+
+    <div class="slideshow-nav-wrapper">
+    <img src="./leftarrow.png" class="arrow left-arrow">
+    <div class="campaign-title">LA CAMPAGNE</div>
+    <img src="./rightarrow.png"class="arrow right-arrow">
+
+</div>
+    <section id="slideshow">
+      <div class="slick">
+        <div><img src="campaignModelMobilecropA4.jpg" alt=""></div>
+        <div><img src="campaignPerfumeMobileCropA4.jpg" alt=""></div>
+      </div>
+    </section>
+  </body>
+</html>

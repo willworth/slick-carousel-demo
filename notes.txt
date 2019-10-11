@@ -1,0 +1,17 @@
+https://cdnjs.com/libraries/slick-carousel
+https://kenwheeler.github.io/slick/#getting-started
+https://kenwheeler.github.io/slick/
+https://github.com/kenwheeler/slick/
+
+
+
+https://stackoverflow.com/questions/29876185/change-the-arrow-buttons-in-slick-slider
+Slick has a very easy way to customize its buttons through two variables in its own configuration: prevArrow and nextArrow.
+
+Both types are: string (html | jQuery selector) | object (DOM node | jQuery object), so in your settings slick slider you can set the classes:
+
+prevArrow: $('.prev')
+nextArrow: $('.next')
+and add to these elements the styles you want.
+
+For example:
